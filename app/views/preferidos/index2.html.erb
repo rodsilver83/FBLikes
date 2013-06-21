@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="row-fuild">
+		<%@colums.each do |col|%>
+		<div class="span3">
+			<%col.each do |c|%>
+			<div class="marco marco-<%=c["color"]%>">
+				<a href="#" class="like-btn">
+					<div class="fade-marco fade-<%=c["color"]%>"></div>
+					<div class="like like-<%=c["color"]%>" id="<%= c.id%>">
+							Me gusta <i class="icon-star icon-white"></i>
+					</div>
+				
+					<img src="<%= c.image%>" class="collection-image">
+				
+				<div class="title">
+					<%= c.collection_name%>
+				</div>
+				<div class="product-desc">
+					<%= c.collection_slogan%>
+				</div>
+				</a>
+			</div>
+			<%end%>
+		</div>
+		<%end%>
+	</div>
+</div>

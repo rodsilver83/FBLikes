@@ -83,4 +83,8 @@ class TabController < ApplicationController
     session[:userDB] = user
     redirect_to FB_APP_PAGE
   end
+  
+  def app_redirect
+    render 'redirect_app' , :layout => 'application'
+  end
 end

@@ -7,9 +7,16 @@ class PreferidosController < ApplicationController
     @colums[1] = []
     @colums[2] = []
     @colums[3] = []
+    @colums[4] = []
+    @colums[5] = []
+    @colums[6] = []
+    color = ["rojo","negro","verde","azul","trendyta"]
+    puts color[0]
+    #color = ["negro"]
     collections.each do |c|
             
       col = index % 4
+      c["color"] = color.sample
       case col
       when 0
         @colums[0].push(c)
@@ -19,6 +26,12 @@ class PreferidosController < ApplicationController
         @colums[2].push(c)
       when 3
         @colums[3].push(c)
+      when 4
+        @colums[4].push(c)
+      when 5
+        @colums[5].push(c)
+      when 6
+        @colums[6].push(c)
       end
       index+=1
     end

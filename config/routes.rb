@@ -11,6 +11,7 @@ TrendytaPinTab::Application.routes.draw do
   match '/dislike' => 'preferidos#dislike'
   
   match "/tab" => "tab#index"
+  match "/tab_app" => "tab#app_redirect"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
