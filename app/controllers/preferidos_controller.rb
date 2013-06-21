@@ -22,6 +22,7 @@ class PreferidosController < ApplicationController
       end
       index+=1
     end
+    render 'index2'
   end
   def like
     puts "Preferidos - LIKE"
