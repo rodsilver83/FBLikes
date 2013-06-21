@@ -1,0 +1,2 @@
+module TabPagesHelper
+end

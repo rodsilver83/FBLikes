@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id_user: 1
+  id_collection: 1
+  collection_name: MyString
+  collection_slogan: MyString
+  collection_description: MyString
+  collection_image: MyString
+  like: 1
+  status: 1
+
+two:
+  id_user: 1
+  id_collection: 1
+  collection_name: MyString
+  collection_slogan: MyString
+  collection_description: MyString
+  collection_image: MyString
+  like: 1
+  status: 1
