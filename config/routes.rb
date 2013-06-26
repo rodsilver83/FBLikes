@@ -6,6 +6,8 @@ TrendytaPinTab::Application.routes.draw do
   post 'preferidos/like'
   post 'preferidos/dislike'
   
+  root :to => 'preferidos#index'
+  
   match '/preferidos' => 'preferidos#index'
   match '/like' => 'preferidos#like'
   match '/dislike' => 'preferidos#dislike'
